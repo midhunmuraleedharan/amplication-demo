@@ -25,25 +25,7 @@ class LanguageOrderByInput {
   @Field(() => SortOrder, {
     nullable: true,
   })
-  bcp_47LanguageTag?: SortOrder;
-
-  @ApiProperty({
-    required: false,
-    enum: ["asc", "desc"],
-  })
-  @Field(() => SortOrder, {
-    nullable: true,
-  })
   createdAt?: SortOrder;
-
-  @ApiProperty({
-    required: false,
-    enum: ["asc", "desc"],
-  })
-  @Field(() => SortOrder, {
-    nullable: true,
-  })
-  dbValue?: SortOrder;
 
   @ApiProperty({
     required: false,
@@ -79,25 +61,7 @@ class LanguageOrderByInput {
   @Field(() => SortOrder, {
     nullable: true,
   })
-  linkedinUrn?: SortOrder;
-
-  @ApiProperty({
-    required: false,
-    enum: ["asc", "desc"],
-  })
-  @Field(() => SortOrder, {
-    nullable: true,
-  })
   region?: SortOrder;
-
-  @ApiProperty({
-    required: false,
-    enum: ["asc", "desc"],
-  })
-  @Field(() => SortOrder, {
-    nullable: true,
-  })
-  sortFactorlanguageName?: SortOrder;
 
   @ApiProperty({
     required: false,
