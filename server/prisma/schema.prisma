@@ -65,3 +65,13 @@ model Product {
   orders      Order[]
   updatedAt   DateTime @updatedAt
 }
+
+model Language {
+  bcp_47LanguageTag String
+  dbValue           Int?
+  description       String
+  id                String  @id @default(cuid())
+  languageName      String?
+  linkedinUrn       Float?
+  region            String?
+}
