@@ -67,14 +67,10 @@ model Product {
 }
 
 model Language {
-  bcp_47LanguageTag      String?
-  createdAt              DateTime @default(now())
-  dbValue                Int?
-  description            String?
-  display                String?
-  id                     String   @id @default(cuid())
-  linkedinUrn            String?
-  region                 String?
-  sortFactorlanguageName String?
-  updatedAt              DateTime @updatedAt
+  createdAt   DateTime @default(now())
+  description String?
+  display     String?
+  id          String   @id @default(cuid())
+  region      String?
+  updatedAt   DateTime @updatedAt
 }

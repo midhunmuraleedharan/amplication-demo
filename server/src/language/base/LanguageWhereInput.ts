@@ -14,32 +14,9 @@ import { ApiProperty } from "@nestjs/swagger";
 import { StringNullableFilter } from "../../util/StringNullableFilter";
 import { Type } from "class-transformer";
 import { IsOptional } from "class-validator";
-import { IntNullableFilter } from "../../util/IntNullableFilter";
 import { StringFilter } from "../../util/StringFilter";
 @InputType()
 class LanguageWhereInput {
-  @ApiProperty({
-    required: false,
-    type: StringNullableFilter,
-  })
-  @Type(() => StringNullableFilter)
-  @IsOptional()
-  @Field(() => StringNullableFilter, {
-    nullable: true,
-  })
-  bcp_47LanguageTag?: StringNullableFilter;
-
-  @ApiProperty({
-    required: false,
-    type: IntNullableFilter,
-  })
-  @Type(() => IntNullableFilter)
-  @IsOptional()
-  @Field(() => IntNullableFilter, {
-    nullable: true,
-  })
-  dbValue?: IntNullableFilter;
-
   @ApiProperty({
     required: false,
     type: StringNullableFilter,
@@ -82,28 +59,6 @@ class LanguageWhereInput {
   @Field(() => StringNullableFilter, {
     nullable: true,
   })
-  linkedinUrn?: StringNullableFilter;
-
-  @ApiProperty({
-    required: false,
-    type: StringNullableFilter,
-  })
-  @Type(() => StringNullableFilter)
-  @IsOptional()
-  @Field(() => StringNullableFilter, {
-    nullable: true,
-  })
   region?: StringNullableFilter;
-
-  @ApiProperty({
-    required: false,
-    type: StringNullableFilter,
-  })
-  @Type(() => StringNullableFilter)
-  @IsOptional()
-  @Field(() => StringNullableFilter, {
-    nullable: true,
-  })
-  sortFactorlanguageName?: StringNullableFilter;
 }
 export { LanguageWhereInput };

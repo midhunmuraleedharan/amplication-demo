@@ -48,15 +48,11 @@ export class LanguageControllerBase {
     return await this.service.create({
       data: data,
       select: {
-        bcp_47LanguageTag: true,
         createdAt: true,
-        dbValue: true,
         description: true,
         display: true,
         id: true,
-        linkedinUrn: true,
         region: true,
-        sortFactorlanguageName: true,
         updatedAt: true,
       },
     });
@@ -77,15 +73,11 @@ export class LanguageControllerBase {
     return this.service.findMany({
       ...args,
       select: {
-        bcp_47LanguageTag: true,
         createdAt: true,
-        dbValue: true,
         description: true,
         display: true,
         id: true,
-        linkedinUrn: true,
         region: true,
-        sortFactorlanguageName: true,
         updatedAt: true,
       },
     });
@@ -107,15 +99,11 @@ export class LanguageControllerBase {
     const result = await this.service.findOne({
       where: params,
       select: {
-        bcp_47LanguageTag: true,
         createdAt: true,
-        dbValue: true,
         description: true,
         display: true,
         id: true,
-        linkedinUrn: true,
         region: true,
-        sortFactorlanguageName: true,
         updatedAt: true,
       },
     });
@@ -146,15 +134,11 @@ export class LanguageControllerBase {
         where: params,
         data: data,
         select: {
-          bcp_47LanguageTag: true,
           createdAt: true,
-          dbValue: true,
           description: true,
           display: true,
           id: true,
-          linkedinUrn: true,
           region: true,
-          sortFactorlanguageName: true,
           updatedAt: true,
         },
       });
@@ -184,15 +168,11 @@ export class LanguageControllerBase {
       return await this.service.delete({
         where: params,
         select: {
-          bcp_47LanguageTag: true,
           createdAt: true,
-          dbValue: true,
           description: true,
           display: true,
           id: true,
-          linkedinUrn: true,
           region: true,
-          sortFactorlanguageName: true,
           updatedAt: true,
         },
       });

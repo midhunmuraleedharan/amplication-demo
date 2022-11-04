@@ -11,21 +11,10 @@ https://docs.amplication.com/docs/how-to/custom-code
   */
 import { ObjectType, Field } from "@nestjs/graphql";
 import { ApiProperty } from "@nestjs/swagger";
-import { IsString, IsOptional, IsDate, IsInt } from "class-validator";
+import { IsDate, IsString, IsOptional } from "class-validator";
 import { Type } from "class-transformer";
 @ObjectType()
 class Language {
-  @ApiProperty({
-    required: false,
-    type: String,
-  })
-  @IsString()
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
-  bcp_47LanguageTag!: string | null;
-
   @ApiProperty({
     required: true,
   })
@@ -33,17 +22,6 @@ class Language {
   @Type(() => Date)
   @Field(() => Date)
   createdAt!: Date;
-
-  @ApiProperty({
-    required: false,
-    type: Number,
-  })
-  @IsInt()
-  @IsOptional()
-  @Field(() => Number, {
-    nullable: true,
-  })
-  dbValue!: number | null;
 
   @ApiProperty({
     required: false,
@@ -84,29 +62,7 @@ class Language {
   @Field(() => String, {
     nullable: true,
   })
-  linkedinUrn!: string | null;
-
-  @ApiProperty({
-    required: false,
-    type: String,
-  })
-  @IsString()
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
   region!: string | null;
-
-  @ApiProperty({
-    required: false,
-    type: String,
-  })
-  @IsString()
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
-  sortFactorlanguageName!: string | null;
 
   @ApiProperty({
     required: true,

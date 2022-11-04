@@ -11,31 +11,9 @@ https://docs.amplication.com/docs/how-to/custom-code
   */
 import { InputType, Field } from "@nestjs/graphql";
 import { ApiProperty } from "@nestjs/swagger";
-import { IsString, IsOptional, IsInt } from "class-validator";
+import { IsString, IsOptional } from "class-validator";
 @InputType()
 class LanguageCreateInput {
-  @ApiProperty({
-    required: false,
-    type: String,
-  })
-  @IsString()
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
-  bcp_47LanguageTag?: string | null;
-
-  @ApiProperty({
-    required: false,
-    type: Number,
-  })
-  @IsInt()
-  @IsOptional()
-  @Field(() => Number, {
-    nullable: true,
-  })
-  dbValue?: number | null;
-
   @ApiProperty({
     required: false,
     type: String,
@@ -67,28 +45,6 @@ class LanguageCreateInput {
   @Field(() => String, {
     nullable: true,
   })
-  linkedinUrn?: string | null;
-
-  @ApiProperty({
-    required: false,
-    type: String,
-  })
-  @IsString()
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
   region?: string | null;
-
-  @ApiProperty({
-    required: false,
-    type: String,
-  })
-  @IsString()
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
-  sortFactorlanguageName?: string | null;
 }
 export { LanguageCreateInput };
