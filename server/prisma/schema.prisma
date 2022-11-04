@@ -65,12 +65,3 @@ model Product {
   orders      Order[]
   updatedAt   DateTime @updatedAt
 }
-
-model Language {
-  createdAt   DateTime @default(now())
-  description String?
-  display     String?
-  id          String   @id @default(cuid())
-  region      String?
-  updatedAt   DateTime @updatedAt
-}
