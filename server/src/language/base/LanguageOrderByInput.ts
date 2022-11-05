@@ -25,7 +25,34 @@ class LanguageOrderByInput {
   @Field(() => SortOrder, {
     nullable: true,
   })
+  bcp_47LanguageTag?: SortOrder;
+
+  @ApiProperty({
+    required: false,
+    enum: ["asc", "desc"],
+  })
+  @Field(() => SortOrder, {
+    nullable: true,
+  })
   createdAt?: SortOrder;
+
+  @ApiProperty({
+    required: false,
+    enum: ["asc", "desc"],
+  })
+  @Field(() => SortOrder, {
+    nullable: true,
+  })
+  dbValue?: SortOrder;
+
+  @ApiProperty({
+    required: false,
+    enum: ["asc", "desc"],
+  })
+  @Field(() => SortOrder, {
+    nullable: true,
+  })
+  description?: SortOrder;
 
   @ApiProperty({
     required: false,
@@ -43,7 +70,43 @@ class LanguageOrderByInput {
   @Field(() => SortOrder, {
     nullable: true,
   })
+  languageName?: SortOrder;
+
+  @ApiProperty({
+    required: false,
+    enum: ["asc", "desc"],
+  })
+  @Field(() => SortOrder, {
+    nullable: true,
+  })
+  linkedinUrn?: SortOrder;
+
+  @ApiProperty({
+    required: false,
+    enum: ["asc", "desc"],
+  })
+  @Field(() => SortOrder, {
+    nullable: true,
+  })
   name?: SortOrder;
+
+  @ApiProperty({
+    required: false,
+    enum: ["asc", "desc"],
+  })
+  @Field(() => SortOrder, {
+    nullable: true,
+  })
+  region?: SortOrder;
+
+  @ApiProperty({
+    required: false,
+    enum: ["asc", "desc"],
+  })
+  @Field(() => SortOrder, {
+    nullable: true,
+  })
+  sortFactor?: SortOrder;
 
   @ApiProperty({
     required: false,

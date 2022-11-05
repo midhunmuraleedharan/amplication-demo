@@ -19,8 +19,15 @@ model User {
 }
 
 model Language {
-  createdAt DateTime @default(now())
-  id        String   @id @default(cuid())
-  name      String
-  updatedAt DateTime @updatedAt
+  bcp_47LanguageTag String?
+  createdAt         DateTime @default(now())
+  dbValue           Int?
+  description       String?
+  id                String   @id @default(cuid())
+  languageName      String?
+  linkedinUrn       Float?
+  name              String?
+  region            String?
+  sortFactor        String?
+  updatedAt         DateTime @updatedAt
 }
