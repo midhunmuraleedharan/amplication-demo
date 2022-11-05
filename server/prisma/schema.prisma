@@ -31,3 +31,14 @@ model Language {
   sortFactor        String?
   updatedAt         DateTime @updatedAt
 }
+
+model TraitMethod {
+  createdAt   DateTime @default(now())
+  display     String?
+  id          String   @id @default(cuid())
+  method      String?
+  sortFactor  Int?
+  totalPoints Int?
+  types       Json?
+  updatedAt   DateTime @updatedAt
+}
