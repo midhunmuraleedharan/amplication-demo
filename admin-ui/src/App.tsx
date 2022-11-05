@@ -25,6 +25,10 @@ import { ProductList } from "./product/ProductList";
 import { ProductCreate } from "./product/ProductCreate";
 import { ProductEdit } from "./product/ProductEdit";
 import { ProductShow } from "./product/ProductShow";
+import { LanguageList } from "./language/LanguageList";
+import { LanguageCreate } from "./language/LanguageCreate";
+import { LanguageEdit } from "./language/LanguageEdit";
+import { LanguageShow } from "./language/LanguageShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -85,6 +89,13 @@ const App = (): React.ReactElement => {
           edit={ProductEdit}
           create={ProductCreate}
           show={ProductShow}
+        />
+        <Resource
+          name="Language"
+          list={LanguageList}
+          edit={LanguageEdit}
+          create={LanguageCreate}
+          show={LanguageShow}
         />
       </Admin>
     </div>
