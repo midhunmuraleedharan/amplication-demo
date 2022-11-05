@@ -17,16 +17,3 @@ model User {
   updatedAt DateTime @updatedAt
   username  String   @unique
 }
-
-model LanguageDemo {
-  bcp_47LanguageTag String?
-  createdAt         DateTime @default(now())
-  dbValue           Int?
-  description       String?
-  display           String?
-  id                String   @id @default(cuid())
-  languageName      String?
-  region            String?
-  sortFactor        String?
-  updatedAt         DateTime @updatedAt
-}
