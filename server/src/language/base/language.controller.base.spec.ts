@@ -19,29 +19,57 @@ import { LanguageService } from "../language.service";
 const nonExistingId = "nonExistingId";
 const existingId = "existingId";
 const CREATE_INPUT = {
+  bcp_47LanguageTag: "exampleBcp_47LanguageTag",
   createdAt: new Date(),
+  dbValue: 42,
+  description: "exampleDescription",
   id: "exampleId",
+  languageName: "exampleLanguageName",
+  linkedinUrn: 42.42,
   name: "exampleName",
+  region: "exampleRegion",
+  sortFactor: "exampleSortFactor",
   updatedAt: new Date(),
 };
 const CREATE_RESULT = {
+  bcp_47LanguageTag: "exampleBcp_47LanguageTag",
   createdAt: new Date(),
+  dbValue: 42,
+  description: "exampleDescription",
   id: "exampleId",
+  languageName: "exampleLanguageName",
+  linkedinUrn: 42.42,
   name: "exampleName",
+  region: "exampleRegion",
+  sortFactor: "exampleSortFactor",
   updatedAt: new Date(),
 };
 const FIND_MANY_RESULT = [
   {
+    bcp_47LanguageTag: "exampleBcp_47LanguageTag",
     createdAt: new Date(),
+    dbValue: 42,
+    description: "exampleDescription",
     id: "exampleId",
+    languageName: "exampleLanguageName",
+    linkedinUrn: 42.42,
     name: "exampleName",
+    region: "exampleRegion",
+    sortFactor: "exampleSortFactor",
     updatedAt: new Date(),
   },
 ];
 const FIND_ONE_RESULT = {
+  bcp_47LanguageTag: "exampleBcp_47LanguageTag",
   createdAt: new Date(),
+  dbValue: 42,
+  description: "exampleDescription",
   id: "exampleId",
+  languageName: "exampleLanguageName",
+  linkedinUrn: 42.42,
   name: "exampleName",
+  region: "exampleRegion",
+  sortFactor: "exampleSortFactor",
   updatedAt: new Date(),
 };
 
