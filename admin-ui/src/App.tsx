@@ -13,6 +13,10 @@ import { LanguageList } from "./language/LanguageList";
 import { LanguageCreate } from "./language/LanguageCreate";
 import { LanguageEdit } from "./language/LanguageEdit";
 import { LanguageShow } from "./language/LanguageShow";
+import { TraitMethodList } from "./traitMethod/TraitMethodList";
+import { TraitMethodCreate } from "./traitMethod/TraitMethodCreate";
+import { TraitMethodEdit } from "./traitMethod/TraitMethodEdit";
+import { TraitMethodShow } from "./traitMethod/TraitMethodShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -52,6 +56,13 @@ const App = (): React.ReactElement => {
           edit={LanguageEdit}
           create={LanguageCreate}
           show={LanguageShow}
+        />
+        <Resource
+          name="TraitMethod"
+          list={TraitMethodList}
+          edit={TraitMethodEdit}
+          create={TraitMethodCreate}
+          show={TraitMethodShow}
         />
       </Admin>
     </div>
