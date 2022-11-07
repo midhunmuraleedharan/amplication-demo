@@ -42,3 +42,11 @@ model TraitMethod {
   types       Json?
   updatedAt   DateTime @updatedAt
 }
+
+model Order {
+  createdAt DateTime @default(now())
+  email     String?
+  id        String   @id @default(cuid())
+  name      String
+  updatedAt DateTime @updatedAt
+}
