@@ -67,8 +67,4 @@ app.listen(3000)
 
 // Export your Express configuration so that it can be consumed by the Lambda handler
 
-/*
--something went
- nee
-*/
 module.exports = app
